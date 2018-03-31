@@ -63,7 +63,9 @@ There are a few endpoints setup so you can have a play around, with a mix of GET
 Most, if not all are documented within the code, but here are a few to get you started...
 
 ```http://localhost:4567/hello/Sher```
+
 ```http://localhost:4567/hello/John Smith```
+
 
 ### 'Books' endpoint/route...
 
