@@ -67,13 +67,16 @@ Most, if not all are documented within the code, but here are a few to get you s
 
 ### 'Books' endpoint/route...
 
-See some JSON based on valid endpoints/presence of specific files...
+#### See some JSON based on valid endpoints/presence of specific files...
 
 ```http://localhost:4567/books?path=/```
+
 ```http://localhost:4567/books?path=/reference```
+
 ```http://localhost:4567/books?bookId=1234```
 
-Hit some endpoints that are known not to exist...
+#### Hit some endpoints that are known not to exist...
 
 ```http://localhost:4567/books?path=/nothere```
+
 ```http://localhost:4567/books?bookId=45678```
