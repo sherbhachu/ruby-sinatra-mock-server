@@ -10,6 +10,9 @@ module Sinatra
             if params['path'] == '/'
               #http://localhost:4567/books?path=/
               json_response(200, parse_json_file('books/all_books'))
+            elsif params['path'] == '/secret'
+              #http://localhost:4567/books?path=/secret
+              json_response(200, parse_json_file("books/#{BookIds.SecretBook}"))
             elsif params['path'] == '/reference'
               #http://localhost:4567/books?path=/reference
               json_response(200, parse_json_file('books/reference_books'))
