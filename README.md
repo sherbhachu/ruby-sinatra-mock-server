@@ -15,8 +15,8 @@ An example of how to create a mock server using the Ruby gem 'Sinatra'
 
 ## What this is not...
 
-1. An all-in-one super duper mock server.
-2. Something that you can 100% copy over for almost any app (though I suspect you'd be able to use most, as is).
+ 1. An all-in-one super duper mock server.
+ 2. Something that you can 100% copy over for almost any app (though I suspect you'd be able to use most, as is).
 
 ## Known limitations...
 
@@ -31,11 +31,11 @@ Drop me an email, sherbhachu@googlemail.com for any comments, suggestions, etc.
 
 I like to use RVM to get my house in order...
 
-1. cd into ruby-sinatra-mock-server/
-2. rvm use ruby-2.4.0 (or a recent-ish one)
-3. rvm gemset create ruby-sinatra-mock-server
-4. rvm gemset use ruby-sinatra-mock-server
-6. bundle install
+ 1. cd into ruby-sinatra-mock-server/
+ 2. rvm use ruby-2.4.0 (or a recent-ish one)
+ 3. rvm gemset create ruby-sinatra-mock-server
+ 4. rvm gemset use ruby-sinatra-mock-server
+ 6. bundle install
 
 ## Start the server...
 
@@ -82,3 +82,24 @@ Most, if not all are documented within the code, but here are a few to get you s
 ```http://localhost:4567/books?path=/nothere```
 
 ```http://localhost:4567/books?bookId=45678```
+
+
+### References
+
+Even though there are some useful comments in the code, I thought I would explicitly use the README to put down just a few of the references I used to put this project together.
+
+ 1. Sinatra Best Practices (Covers modularising your routes, config.ru, helpers and more)
+    - https://blog.carbonfive.com/2013/06/24/sinatra-best-practices-part-one/
+
+ 2. Sinatra documentation
+    - http://sinatrarb.com/intro.html
+    - http://sinatrarb.com/configuration.html
+    - http://sinatrarb.com/intro.html#Using%20a%20Classic%20Style%20Application%20with%20a%20config.ru
+
+
+ 3. Specifics around some of the settings in app.rb (cross_origin, header modifications and more)
+    - https://github.com/britg/sinatra-cross_origin
+    - https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#Preflighted_requests
+
+ 4. Other...
+    - http://markhneedham.com/blog/2014/08/17/ruby-receive-json-in-request-body/
