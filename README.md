@@ -103,3 +103,5 @@ Even though there are some useful comments in the code, I thought I would explic
 
  4. Other...
     - http://markhneedham.com/blog/2014/08/17/ruby-receive-json-in-request-body/
+    - https://wixelhq.com/blog/working-with-sinatra-routes-and-conditions
+    - https://books.google.co.uk/books?id=1BNTDwAAQBAJ&lpg=PT233&dq=request.body.rewind&pg=PA1#v=onepage&q&f=false
